@@ -71,7 +71,7 @@ function App() {
         {/* Styled About Me Section */}
         <div className="about-me">
           <p>
-            I'm a friendly and approachable final-year Computer Science student at Tshwane University of Technology, passionate about turning ideas into impactful software. I thrive on collaboration and make friends easily, whether I'm working on a React project, debugging with classmates, or just chatting about tech over coffee. My enthusiasm for learning extends beyond code—I genuinely enjoy connecting with people, sharing knowledge, and building solutions together. I bring both technical skill and a warm, team-oriented spirit to every project I tackle.
+            I'm a final-year Computer Science student at Tshwane University of Technology, passionate about turning ideas into impactful software. I thrive on collaboration and make friends easily, whether I'm working on a React project, debugging with classmates, or just chatting about tech over coffee. My enthusiasm for learning extends beyond code—I genuinely enjoy connecting with people, sharing knowledge, and building solutions together. I bring both technical skill and a warm, team-oriented spirit to every project I tackle.
           </p>
         </div>
         
@@ -175,29 +175,8 @@ function App() {
 
       <section className="contact">
         <h2>Contact Me</h2>
-        <form onSubmit={handleSubmit}>
-          <input 
-            type="text" 
-            placeholder="Your Name" 
-            value={contact.name}
-            onChange={(e) => setContact({...contact, name: e.target.value})}
-            required 
-          />
-          <input 
-            type="email" 
-            placeholder="Your Email" 
-            value={contact.email}
-            onChange={(e) => setContact({...contact, email: e.target.value})}
-            required 
-          />
-          <textarea 
-            placeholder="Your Message" 
-            value={contact.message}
-            onChange={(e) => setContact({...contact, message: e.target.value})}
-            required 
-          ></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+       
+        
         {status && <p className="status">{status}</p>}
         <p className="contact-info">
           Email: <a href="mailto:hlukaniadel@gmail.com">hlukaniadel@gmail.com</a><br/>
